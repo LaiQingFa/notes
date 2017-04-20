@@ -154,13 +154,14 @@ public class Prob3 {
    	   	      String num2 ="";
    	   	      String fuhao="";
    	   	      int test=0;
-   	   	      int total=0;
+   	   	      double total=0;
    	   	      for(int i=0;i<contxt.length();i++){ 
    	   	    	String ch = contxt.charAt(i)+""; 
    	   	    	
    	   	      if(ch.equals("*")||ch.equals("-")||ch.equals("/")||ch.equals("+")){
    	            	test++;
    	            	 fuhao=ch; 
+   	            	 continue;
    	   		       
    	            }
    	  		      
@@ -171,8 +172,8 @@ public class Prob3 {
    	   	    	  }     
    	   	      }
    	  
-   	   	         int intnum2=Integer.parseInt(num2);
-   	   	         int intnum1=Integer.parseInt(num1);
+   	   	         double intnum2=Double.parseDouble(num2);
+   	   	         double intnum1=Double.parseDouble(num1);
    	   	         
    	   	         switch(fuhao){
    	   	         case "*":
